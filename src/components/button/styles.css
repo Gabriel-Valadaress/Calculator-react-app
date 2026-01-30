@@ -1,0 +1,25 @@
+.buttonContainer {
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.buttonContainer:hover {
+    cursor: pointer;
+}
+
+.buttonContainer p {
+    font-size: 30px;
+    width: fit-content;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 40%;
+    fill: white;
+}

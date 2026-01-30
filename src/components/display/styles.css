@@ -1,0 +1,32 @@
+.display-container {
+    height: 50%;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.display-container textarea {
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 40px;
+    direction: ltr;
+    text-align: right;
+    font-family: monospace;
+    font-size: 32px;
+    line-height: 1.2;
+    overflow: hidden;
+    min-height: 38.4px;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.display-container p {
+    font-family: monospace;
+    font-size: 26px;
+}
