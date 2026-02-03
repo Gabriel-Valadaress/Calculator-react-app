@@ -8,6 +8,7 @@ export default function Button(props) {
                 backgroundColor: props.isOperator ? "orange" : "white",
                 color: props.isOperator ? "white" : "black"
             }}
+            onClick={props.onClick}
         >
             {props.isIcon ?
                 <div className="icon">{props.name}</div> :

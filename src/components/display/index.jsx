@@ -1,28 +1,17 @@
 import "./styles.css";
 
-import { useRef, useEffect } from 'react';
-
-export default function Display() {
-
-    const textareaRef = useRef(null);
-
-    const adjustHeight = () => {
-        if (textareaRef.current) {
-            textareaRef.current.style.height = 'auto';
-            textareaRef.current.style.height = textareaRef.current.scrollHeight + 'px';
+export default function Display({ currentValue, previousValue, operation, result }) {
+    const displayExpression = () => {
+        if (previousValue && operation) {
+            return `${previousValue} ${operation}`;
         }
+        return "";
     };
-
-    useEffect(() => {
-        adjustHeight();
-    }, []);
 
     return (
         <div className="display-container">
-            <textarea
-                ref={textareaRef}
-                onInput={adjustHeight} />
-            <p></p>
+            <div className="expression">{displayExpression()}</div>
+            <div className="current-value">{currentValue || "0"}</div>
         </div>
     );
 }

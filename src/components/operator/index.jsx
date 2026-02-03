@@ -5,5 +5,6 @@ export default function Operator(props) {
         name={props.name}
         isIcon={props.isIcon}
         isOperator={true}
+        onClick={props.onClick}
     />
 }
